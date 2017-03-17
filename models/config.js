@@ -13,17 +13,10 @@ var http_aws_es = require('http-aws-es');
 
 // credentials for the twitter 
 var twitter = new twit({
-<<<<<<< HEAD
 	consumer_key: '#############################',
 	consumer_secret: '####################################',
 	access_token_key: '#####################################',
 	access_token_secret: '###########################################'
-=======
-	consumer_key: 'your-key',
-	consumer_secret: 'your-consumer-key',
-	access_token_key: 'your-token-key',
-	access_token_secret: 'your-token-secretkey'
->>>>>>> cf10e3f927f25f4a389a5eff4ecf7ee5d098a7df
 });
 
 //credentials for the aws elasticsearch
@@ -33,13 +26,8 @@ var elasticsearch_client_aws = elasticsearch.Client( {
   log: 'trace',
   amazonES: {
     region: 'us-west-2',
-<<<<<<< HEAD
     accessKey: '####################',
 	secretKey: '###############################'
-=======
-    accessKey: 'your-access-key',
-    secretKey: 'your-secret-key'
->>>>>>> cf10e3f927f25f4a389a5eff4ecf7ee5d098a7df
   }
 });
 
