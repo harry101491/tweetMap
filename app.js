@@ -1,7 +1,6 @@
 // variable declaration for getting the express and route module
 var express = require('express');
 var route = require('./routes');
-// var router = express.Router();
 var app = express();
 
 var port = process.env.PORT || 3000;
@@ -25,34 +24,6 @@ app.get('/', route.home);
 
 
 app.get("/search:match_text?", route.postHome);
-
-// handling a post method on the home
-// app.post('/search', route.postHome);
-
-// give the sample json object to the user
-// app.get('sample.json', function(req,res){
-// 	console.log("hi how are you!");
-// });
-
-// app.get('/search', function(req,res){
-	
-// 	// console.log("Inside handling of search function");
-// 	// console.log("the data recieved is:"+JSON.stringify(req.body));
-	
-	
-// 	// console.log("starting the search_document function");
-// 	// Q(search_doc.search_document("twitter","tweet",text)).then(function(data){
-// 	// 	console.log("the data is:"+ JSON.stringify(data));
-// 	// 	res.send(data);
-// 	// 		// console.log("the data is:"+ JSON.stringify(data));
-// 	// });
-
-// 	res.send({"success" : "Updated Successfully", "status" : 200});
-// });
-
-// if the user is trying to access any other page rather then routed
-// app.get('*', route.notFound);
-
 
 // listening on the port 3000
 app.listen(port, function(){

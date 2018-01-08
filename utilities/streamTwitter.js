@@ -28,19 +28,6 @@ function stream_twitter(obj_index, obj_type){
 						console.log("all is well");
 					}
 				});
-				// the local elasticsearch putting the data 
-				// elasticsearch_client.bulk({
-				// 	body: bulkObj
-				// },function(error, response){
-				// 	if(error)
-				// 	{
-				// 		console.log("Some error has occured while creating");
-				// 	}
-				// 	else
-				// 	{
-				// 		console.log("all is well");
-				// 	}
-				// });
 				stream.destroy();
 				//count++;
 			}

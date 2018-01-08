@@ -1,2 +1,8 @@
-# tweetMap
-A node.js project that will search the keywords on the twitter puts them on the elastic search and plots them on the map.
+# Twitter Map Application
+A Tweet Analysis Application built on Node and Express. It get
+tweets from **Twitter Streaming API** and collects then on **Elastic Search**.
+
+## Authors
+
+* **Harshit Pareek** - Software Engineer (NYU Grad) :sunglasses: :computer:
+<br />Looking for new opportunites - contact via mail - hars.pareek@nyu.edu

@@ -33,25 +33,6 @@ function search_document(obj_index, obj_type, match_string){
   }, function (err) {
       console.trace(err.message);
   });
-  // the query for searching the elastic search with query string to be match_string for local elasticseach.
- //  elastic_client.search({
- //  		index: obj_index,
- //  		type: obj_type,
- //  		body: {
- //    		query: {
- //      			match: {
- //        			message: match_string
- //      			}
- //    		}
- //  		}
-	// }).then(function (resp) {
- //    	// console.log("after getting the result");
- //      var hits = resp.hits.hits;
- //      defered.resolve(hits);
-	// }, function (err) {
- //    	console.trace(err.message);
-	// });
-  
   // returning the promise that value will be retured.
   return defered.promise;
 }
